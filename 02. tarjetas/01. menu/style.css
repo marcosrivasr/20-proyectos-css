@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+  display: flex;
+  width: 130%;
+  padding: 50px;
+}
+
+.card {
+  background: rgb(0, 114, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 114, 255, 1) 1%,
+    rgba(33, 25, 173, 1) 100%
+  );
+  color: white;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s ease;
+}
+
+.card a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: lightyellow;
+}
+
+.card:hover {
+  margin-right: 80px;
+  transform: rotate(3deg) translateY(-15px);
+}
+
+.card .header {
+  flex: 1;
+}
+
+.card .header .date {
+  padding: 10px 0;
+}
+
+.card .header .title {
+  font-size: 28px;
+}
+
+card[class*="element"] {
+  margin-left: -100px;
+}
+
+.element-1:hover,
+.element-2:hover {
+  margin-left: -130px;
+}
