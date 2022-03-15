@@ -40,6 +40,9 @@
   width: 25px;
   background-color: #eee;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkmark .material-icons {
