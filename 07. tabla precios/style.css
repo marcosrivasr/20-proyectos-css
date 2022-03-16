@@ -1,0 +1,14 @@
+.price-table-container {
+  display: flex;
+  align-items: center;
+}
+
+.price-table-container .table {
+  border: solid 1px #ccc;
+  width: 400px;
+  height: 500px;
+}
+
+.price-table-container .table.preferred {
+  height: 550px;
+}

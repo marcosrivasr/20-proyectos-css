@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blueviolet;
+}
+.progressbar-container {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.progressbar-container .outer-box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbar-container .inner-box {
+  background-color: white;
+  font-size: 24px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  position: absolute;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+
+  animation: loading 2s linear forwards;
+}
+
+@keyframes loading {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
