@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-container {
+  background-color: rgba(14, 41, 75, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container .modal {
+  width: 600px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  box-shadow: 0px 5px 10px rgba(63, 63, 63, 0.5);
+}
+
+.modal-container .modal .title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-container .modal .title-bar .title {
+  font-weight: bolder;
+  flex: 1;
+}
+
+.modal-container .modal .title-bar .action {
+}
+.modal-container .modal .title-bar .action button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.modal-container .modal .content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.modal-container .modal .content .icon {
+  margin-right: 10px;
+}
+.modal-container .modal .content .message .text {
+  color: #222;
+  font-size: 14px;
+}
+.modal-container .modal .content .title {
+  font-weight: bolder;
+}
+.modal-container .modal .actions {
+  padding: 10px 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.modal-container .modal .actions button[class*="btn"] {
+  border: none;
+  padding: 15px;
+  min-width: 120px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.modal-container .modal .actions .btn-confirm {
+  background-color: #0684c4;
+  color: white;
+}
+.modal-container .modal .actions .btn-confirm:hover {
+  background-color: #056797;
+  color: white;
+}
+.modal-container .modal .actions .btn-cancel {
+  background-color: white;
+  border: solid 1px #ccc !important;
+  color: black;
+}
+.modal-container .modal .actions .btn-cancel:hover {
+  background-color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-container .modal {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .modal-container .modal .actions {
+    flex-direction: column;
+  }
+}
