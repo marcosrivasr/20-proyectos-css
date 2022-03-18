@@ -1,0 +1,71 @@
+:root {
+  --size: 150px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stories-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 790px;
+  margin: 100px auto;
+}
+
+.stories-container .story .outer-border {
+  background-color: black;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+.stories-container .story .border {
+  background-color: white;
+  width: calc(var(--size) - 10px);
+  height: calc(var(--size) - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.stories-container .story .border a {
+  display: block;
+  width: calc(var(--size) - 20px);
+  height: calc(var(--size) - 20px);
+  box-sizing: border-box;
+}
+.stories-container .story .border img {
+  border-radius: 50%;
+  width: calc(var(--size) - 20px);
+  height: calc(var(--size) - 20px);
+  box-sizing: border-box;
+}
+
+.stories-container .story .name {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  width: var(--size);
+}

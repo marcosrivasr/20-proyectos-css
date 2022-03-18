@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #25334d;
+}
+.profile-container {
+  margin: 100px auto;
+  width: 70px;
+}
+
+.profile-container .profile {
+}
+
+.profile-container .profile img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.profile-container .profile .info {
+  display: none;
+  position: absolute;
+  width: 340px;
+  min-height: 300px;
+  max-height: 346px;
+  background-color: #222;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+}
+.profile-container .profile:hover .info {
+  display: flex;
+  animation: show 0.3s ease;
+}
+.profile-container .profile a {
+  color: white;
+  text-decoration: none;
+}
+.profile-container .profile a:hover {
+  text-decoration: underline;
+}
+
+.profile-container .profile .info .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-container .profile .info .photo {
+}
+
+.profile-container .profile .info .photo img {
+}
+
+.profile-container .profile .action {
+}
+
+.profile-container .profile .action button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.profile-container .profile .action button:hover {
+  background-color: #eee;
+}
+
+.profile-container .profile .user-info {
+  padding: 10px 0;
+}
+
+.profile-container .profile .user-info .name {
+  font-weight: bold;
+}
+
+.profile-container .profile .user-info .username {
+  color: #aaa;
+}
+
+.profile-container .profile .description {
+  padding: 10px 0 20px 0;
+  flex: 1;
+}
+.profile-container .profile .description a {
+  color: rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.profile-container .profile .followers-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.profile-container .profile .followers-container a {
+  color: #aaa;
+}
+
+.profile-container .profile .followers-container .number {
+  font-weight: bold;
+  color: white;
+}
+
+.profile-container .profile .other {
+  padding: 10px 0;
+}
+
+.profile-container .profile .other a {
+  color: #999;
+  display: flex;
+}
+
+.profile-container .profile .other a .photos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin-right: 30px;
+}
+.profile-container .profile .other a .photos img {
+  margin-right: -20px;
+  border: solid 4px black;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
